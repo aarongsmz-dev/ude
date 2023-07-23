@@ -7,9 +7,10 @@
 
     --fuente-principal: 3.8rem;
 }
+/*Globales*/
 html{
     font-size: 62.5%;
-    box-sizing: border-box;
+    box-sizing: border-box;/*hack para boxmode*/
 }
 *, *:before, *:after {
   box-sizing: inherit;
@@ -18,6 +19,29 @@ body{
     font-size: 16px;/*1 rem= 10px*/
     font-family: 'Krub', sans-serif;
 }
+.contenedor{
+    max-width: 120rem;
+    margin: 0 auto;
+}
+.boton{
+        background-color: var(--secundario);
+        color: var(--blanco);
+        padding: 1rem 3rem;
+        margin-top: 3rem;  
+        font-size: 2rem;
+        text-decoration: none;
+        text-transform: uppercase;
+        font-weight: bold;
+        border-radius: 5rem;
+        width: 90%;
+        text-align: center;
+}
+@media (min-width: 768px) {
+    .boton{
+        width: auto;
+    }
+}
+/*Tipografia*/
 h1{
     font-size: 3.8rem;
 }
@@ -30,13 +54,11 @@ h3{
 h1, h2, h3{
     text-align: center; 
 }
+/*Titulos*/
 .titulo span {
 font-size: 2rem;
 }
-.contenedor{
-    max-width: 120rem;
-    margin: 0 auto;
-}
+/*Navegación principal*/
 .nav-bg{
  background-color: var(--secundario);
 }
@@ -85,7 +107,7 @@ padding: 1rem;
 .contenido-hero p{
     color: var(--blanco);
 }
-.ubicacion{
+.contenido-hero .ubicacion{
     display: flex;
     align-items: self-end;
 }
