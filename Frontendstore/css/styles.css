@@ -35,7 +35,7 @@ a{
     text-decoration: none;
 }
 img{
-    max-width: 100%;
+    width: 100%;
 }
 
 .contenedor{
@@ -115,9 +115,7 @@ font-size: 2.2rem;
 background-color: var(--primarioscuro);
 padding: 1rem;
 }
-.producto__imagen {
-width: 100%;
-}
+
 
 .producto__nombre{
 font-size: 4rem;
@@ -170,7 +168,7 @@ grid-template-rows: repeat(2, auto);
 
 .nosotros__imagen{
 grid-row: 1/2;
-width: 100%;
+
 }
 @media(min-width: 768px){
     .nosotros__imagen{
@@ -194,6 +192,4 @@ width: 100%;
 .bloque__titulo{
     margin: 0;
 }
-.bloque__imagen{
-    width: 100%;
-}
+/*Pagina del producto*/
