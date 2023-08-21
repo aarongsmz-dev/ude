@@ -27,13 +27,16 @@ body{
     width: 90%;
     margin: 0 auto;
 }
-
+p{
+    padding: 2rem;
+}
 a {
     text-decoration: none;
 }
 
 h1, h2, h3, h4 {
 font-family: var(--fuenteHeading);
+
 }
 
 h1{
@@ -87,6 +90,9 @@ img {
     .header__texto{
         margin-top: 15rem;
     }
+}
+.barra{
+    padding-top: 4rem;
 }
 @media(min-width: 768px){
     .barra{
@@ -154,4 +160,42 @@ font-weight: 700;
 }
 .boton--primario {
     background-color: var(--negro);
+}
+
+.boton--secundario {
+    background-color: var(--primario);
+}
+
+.cursos{
+    list-style: none;
+}
+
+.widget-curso{
+border-bottom: 1px solid var(--gris);
+margin-bottom: 2rem;
+}
+
+.widget-curso:last-of-type{
+border: none;
+margin-bottom: 0;
+}
+
+.widget-curso__label{
+    font-family: var(--fuenteHeading);
+    font-weight: 700;
+}
+
+.widget-curso__info{
+font-weight: normal;
+}
+.widget-curso__label,
+.widget-curso__info{
+    font-size: 2rem;
+}
+
+/*footer*/
+.footer{
+    background-color: var(--negro);
+    padding: 3rem;
+    margin-top: 4rem;
 }
